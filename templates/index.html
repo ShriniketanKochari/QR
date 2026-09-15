@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>QR Code Generator</title>
-
+    <link rel="icon" type="image/png"
+        href="https://www.vecteezy.com/vector-art/20816288-qr-code-icon-for-your-website-design-logo-app-ui">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
@@ -25,11 +27,7 @@
 
                 <label for="urlInput">Website URL</label>
 
-                <input
-                    type="text"
-                    id="urlInput"
-                    placeholder="https://example.com"
-                >
+                <input type="text" id="urlInput" placeholder="https://example.com">
 
                 <button onclick="generateQR()">
                     Generate QR Code
@@ -43,10 +41,7 @@
 
                 <div id="qrcode"></div>
 
-                <button
-                    id="downloadBtn"
-                    onclick="downloadQR()"
-                >
+                <button id="downloadBtn" onclick="downloadQR()">
                     Download QR Code
                 </button>
 
@@ -63,4 +58,5 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
+
 </html>
